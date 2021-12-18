@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(0,0,0,0.3),transparent),url(images/background.png); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.cart-icon{
+    width: 30px;
+    cursor: pointer;
+
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 30px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform:translateX(-50%);
+background: #fff;
+transition: width 0.3s;
+}
+nav ul li a :hover::after{
+    width: 50%;
+}
+.form{
+    height: 370px;
+    width: 320px;
+    background-color: rgb(6, 240, 201);
+    background-position: center;
+    background-size: cover;
+    top: 30%;
+    left: 40%;
+    position: absolute;
+    border-radius: 8px;
+}
+.form img{
+    height: 100px;
+    width: 75px;
+    background: transparent;
+    margin-left: 111px;
+}
+.form-text{
+    float: left;
+}
+.form-text input{
+    margin: 8px;
+    padding: 4px;
+    margin-left: 55px;
+    background-color: #fff;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.login{
+    height: 55px;
+    width: 100px;
+}
+.login input{
+    margin-left: 215px;
+    margin-top: 13px;
+    background-color: transparent;
+    border: 1.5px solid #fff;
+    padding: 2.7px;
+    color: #fff;
+    
+}
+.login input:hover{
+    background-color: rgb(250, 248, 248);
+    border-radius: 5px;
+    color: rgb(6, 240, 201);
+}
+.form-text input::placeholder{
+    color: rgb(10, 10, 10);
+    
+}
+.form-text input:hover{
+    background-color:  rgb(6, 240, 201);
+    border: 1.7px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.login{
+   margin: 20px;
+    margin-top: -20px;
+    height: 10px;
+    width: 150px;
+}
+.login p{
+    margin: -18px;
+    margin-left: 15px;
+}
+.login p:hover{
+    color: #fff;
+}
